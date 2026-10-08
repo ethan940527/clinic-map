@@ -1,0 +1,10 @@
+{
+  "name": "clinic-map",
+  "private": true,
+  "description": "개원 입지 지도 (의원 분포·개원·폐업)",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node serve.js"
+  },
+  "dependencies": { "proj4": "^2.12.1" }
+}
