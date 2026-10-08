@@ -63,7 +63,7 @@ h1{font-size:18px;margin:0;letter-spacing:-.02em;min-width:0;overflow:hidden;tex
 
 .depts{list-style:none;margin:10px 0 0;padding:0}
 .depts li{border-top:1px solid var(--line)}
-.drow{display:grid;grid-template-columns:1fr 54px 54px 54px;align-items:center;gap:6px;width:100%;padding:11px 0;text-align:left}
+.drow{display:grid;grid-template-columns:1fr 44px 44px 44px 56px;align-items:center;gap:6px;width:100%;padding:11px 0;text-align:left}
 .drow.head{font-size:11.5px;color:var(--muted);padding:6px 0;cursor:default}
 .drow b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .drow .v{text-align:right;font-variant-numeric:tabular-nums;font-size:14px}
@@ -82,3 +82,13 @@ h1{font-size:18px;margin:0;letter-spacing:-.02em;min-width:0;overflow:hidden;tex
 .pop b{display:block;font-size:13.5px;margin-bottom:1px}
 .pop span{opacity:.8;white-space:nowrap}
 .pop::after{content:"";position:absolute;left:50%;bottom:-6px;margin-left:-6px;border:6px solid transparent;border-bottom:0;border-top-color:var(--ink)}
+
+.popcard{background:var(--bg);border-radius:12px;padding:12px 14px;margin:12px 0 4px}
+.phead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.phead span{font-size:12.5px;color:var(--muted)}
+.phead b{font-size:22px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pline{margin:6px 0 0;font-size:14px;line-height:1.5}
+.pfem{margin:6px 0 0;font-size:13px}
+.pmeta{margin:6px 0 0;font-size:11.5px;color:var(--muted)}
+.up{color:var(--new)} .down{color:var(--cls)}
+.drow .v.p{font-size:13px}
