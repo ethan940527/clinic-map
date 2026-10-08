@@ -1,15 +1,15 @@
 :root{
   --bg:#F4F5F7; --surface:#FFFFFF; --ink:#16191F; --muted:#69707C; --line:#E2E5EA;
-  --act:#5B6472; --new:#14866D; --new-soft:#E2F3EE; --cls:#C2410C; --cls-soft:#FCEBE2; --focus:#14866D;
+  --act:#5B6472; --new:#14866D; --new-soft:#E2F3EE; --cls:#C2410C; --cls-soft:#FCEBE2; --focus:#14866D; --tg:#E6EDFB;
   box-sizing:border-box;
 }
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
   --bg:#121519; --surface:#1B1F25; --ink:#E9ECF0; --muted:#98A0AC; --line:#2B3038;
-  --act:#9AA3AF; --new:#4FD1A5; --new-soft:#173129; --cls:#FB8A5A; --cls-soft:#3A2218; --focus:#4FD1A5;
+  --act:#9AA3AF; --new:#4FD1A5; --new-soft:#173129; --cls:#FB8A5A; --cls-soft:#3A2218; --focus:#4FD1A5; --tg:#1F2B45;
 }}
 :root[data-theme="dark"]{
   --bg:#121519; --surface:#1B1F25; --ink:#E9ECF0; --muted:#98A0AC; --line:#2B3038;
-  --act:#9AA3AF; --new:#4FD1A5; --new-soft:#173129; --cls:#FB8A5A; --cls-soft:#3A2218; --focus:#4FD1A5;
+  --act:#9AA3AF; --new:#4FD1A5; --new-soft:#173129; --cls:#FB8A5A; --cls-soft:#3A2218; --focus:#4FD1A5; --tg:#1F2B45;
 }
 *,*::before,*::after{box-sizing:inherit}
 html,body{height:100%}
@@ -92,3 +92,18 @@ h1{font-size:18px;margin:0;letter-spacing:-.02em;min-width:0;overflow:hidden;tex
 .pmeta{margin:6px 0 0;font-size:11.5px;color:var(--muted)}
 .up{color:var(--new)} .down{color:var(--cls)}
 .drow .v.p{font-size:13px}
+
+.pall{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.pall b{color:var(--ink)}
+.bd{margin:10px 0 0;border-top:1px solid var(--line);padding-top:8px}
+.bd summary{font-size:13px;font-weight:600;cursor:pointer;color:var(--muted);list-style:none}
+.bd summary::-webkit-details-marker{display:none}
+.bd summary::after{content:" ▾"} .bd[open] summary::after{content:" ▴"}
+.bd table{width:100%;border-collapse:separate;border-spacing:0 2px;margin-top:6px;font-size:13px;font-variant-numeric:tabular-nums}
+.bd th{font-weight:500;color:var(--muted);text-align:left;padding:3px 4px;font-size:12px}
+.bd thead th{text-align:right} .bd thead th:first-child{text-align:left}
+.bd td{text-align:right;padding:4px 6px;border-radius:6px}
+.bd td.tg{background:var(--tg);font-weight:700}
+.bd tr.tgrow th{color:var(--ink);font-weight:700}
+.tgkey{background:var(--tg);color:var(--ink);font-weight:700;padding:0 4px;border-radius:4px}
+.bdnone{margin:8px 0 0;font-size:13px}
